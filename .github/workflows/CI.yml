@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+      - name: Testing
+        run: |
+          cd Application
+          xcodebuild clean build -project Hacktoberfest-iOS.xcodeproj -scheme Hacktoberfest-iOS -sdk iphonesimulator -destination"platform=iOS Simulator,OS=14.0,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
