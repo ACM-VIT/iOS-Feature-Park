@@ -60,14 +60,14 @@
 		5B81A113252A6B6300DA09A8 /* Hacktoberfest iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5B81A13B252A6C6700DA09A8 /* View */,
+				5B81A138252A6C4400DA09A8 /* Controller */,
 				5B81A135252A6BC800DA09A8 /* Model */,
-				5B81A114252A6B6300DA09A8 /* AppDelegate.swift */,
-				5B81A116252A6B6300DA09A8 /* SceneDelegate.swift */,
+				5B81A139252A6C5500DA09A8 /* Helpers */,
 				5B81A11A252A6B6300DA09A8 /* Main.storyboard */,
 				5B81A11D252A6B6600DA09A8 /* Assets.xcassets */,
 				5B81A11F252A6B6600DA09A8 /* LaunchScreen.storyboard */,
 				5B81A122252A6B6600DA09A8 /* Info.plist */,
-				5B81A12A252A6B9400DA09A8 /* TableViewController.swift */,
 			);
 			path = "Hacktoberfest iOS";
 			sourceTree = "<group>";
@@ -79,6 +79,30 @@
 				5B81A131252A6BC400DA09A8 /* Datasource.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5B81A138252A6C4400DA09A8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B81A12A252A6B9400DA09A8 /* TableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B81A139252A6C5500DA09A8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5B81A114252A6B6300DA09A8 /* AppDelegate.swift */,
+				5B81A116252A6B6300DA09A8 /* SceneDelegate.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5B81A13B252A6C6700DA09A8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
