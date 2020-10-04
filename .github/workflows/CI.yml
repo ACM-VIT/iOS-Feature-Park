@@ -15,4 +15,4 @@ jobs:
         uses: actions/checkout@main
       - name: Testing
         run: |
-          xcodebuild clean build -project Hacktoberfest iOS.xcodeproj -scheme Hacktoberfest iOS -sdk iphonesimulator -destination"platform=iOS Simulator,OS=14.0,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+          xcodebuild clean build -project 'Hacktoberfest iOS'.xcodeproj -scheme 'Hacktoberfest iOS' -sdk iphonesimulator -destination"platform=iOS Simulator,OS=14.0,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
