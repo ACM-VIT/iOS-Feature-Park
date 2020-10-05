@@ -6,5 +6,5 @@
 # @global-owner1 and @global-owner2 will be requested for
 # review when someone opens a pull request.
 # Please add names of code owners here and tag the below
-# aaryankotharii
 * @aaryankotharii
+* @swamitagupta
