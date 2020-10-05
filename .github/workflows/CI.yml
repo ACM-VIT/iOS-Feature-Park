@@ -7,12 +7,21 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
-    name: Build
-    runs-on: macos-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@main
-      - name: Testing
-        run: |
-          xcodebuild clean build -project 'Hacktoberfest iOS'.xcodeproj -scheme 'Hacktoberfest iOS' -sdk iphonesimulator -destination"platform=iOS Simulator,OS=14.0,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+   build:
+
+      runs-on: macos-latest
+
+      steps:
+     - uses: actions/checkout@v2
+     - name: Switch to Xcode 12
+       run: sudo xcode-select -s /Applications/Xcode_12.app
+     - name: Show Available Destinations
+       run: |
+         xcodebuild -scheme 'Hacktoberfest iOS' -showdestinations
+     - name: Build
+       env: 
+         PROJECT: 'Hacktoberfest iOS'.xcodeproj
+         SCHEME: 'Hacktoberfest iOS'
+         DESTINATION: platform=iOS Simulator,OS=14.0,name=iPhone 11
+       run: |
+         xcodebuild -project "$PROJECT" -scheme "$SCHEME" -destination "$DESTINATION" -configuration Release build CODE_SIGNING_ALLOWED=NO
