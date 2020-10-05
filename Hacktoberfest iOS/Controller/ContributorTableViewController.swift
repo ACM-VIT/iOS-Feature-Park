@@ -40,6 +40,11 @@ class ContributorTableViewController: UITableViewController {
         })
     }
     
+    //MARK: - table view delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
     func makeContextMenu(for index:Int) -> UIMenu {
         var actions = [UIAction]()

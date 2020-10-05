@@ -11,6 +11,7 @@ class FrameworkTableViewController: UITableViewController {
     
     var cellIdentifier = "frameworkCell"
     var segueIdentifier = "frameworkToDetail"
+    var framework = "Framework"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,18 +33,30 @@ class FrameworkTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
-        let framework = Datasource.frameworks[indexPath.row]
-        cell.textLabel?.text = framework.name
+        //let cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: cellIdentifier)
+        let cellFramework = Datasource.frameworks[indexPath.row]
+        cell.textLabel?.text = cellFramework.name
+        cell.detailTextLabel?.text = cellFramework.description
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
     }
     
     //MARK: - Table view Delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        framework = Datasource.frameworks[indexPath.row].name
         performSegue(withIdentifier: segueIdentifier, sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! DetailViewController
+            destinationVC.framework = framework
+    }
     
 
 }
