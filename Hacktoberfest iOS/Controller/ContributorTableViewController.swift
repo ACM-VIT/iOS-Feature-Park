@@ -8,7 +8,7 @@
 import UIKit
 import SafariServices
 
-class TableViewController: UITableViewController {
+class ContributorTableViewController: UITableViewController {
     
     var cellIdentifier = "cell"
     
