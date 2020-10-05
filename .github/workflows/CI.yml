@@ -20,7 +20,7 @@ jobs:
          xcodebuild -scheme 'Hacktoberfest iOS' -showdestinations
       - name: Build
         env:
-          Project: "Hacktoberfest iOS.xcodeproj"
+          Project: Hacktoberfest\ iOS.xcodeproj
           SCHEME: "Hacktoberfest iOS"
           DESTINATION: platform=iOS Simulator,OS=14.0,name=iPhone 11
         run: |
