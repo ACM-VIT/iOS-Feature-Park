@@ -52,9 +52,14 @@ Short description about the project.
 
 ---
 
--_domain specific guidelines here_-
-  
+## Steps to run the project
+
+<!-- steps to run the app -->
+  * clone your fork
+  * open the file <project_Name>.xcproject
+  * run the project ( shortcut: ⌘ R)
 ---
+
 ## Overview
 
 The overview starts here. Random text about the project, motive, how, what, why etc.
