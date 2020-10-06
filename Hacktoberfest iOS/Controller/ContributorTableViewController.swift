@@ -70,7 +70,6 @@ class ContributorTableViewController: UITableViewController {
     }
 }
 
-
 extension UIViewController : SFSafariViewControllerDelegate{
     func openWebsite(_ link : String?){
         if let link = link,let url = URL(string: link) {
@@ -79,6 +78,9 @@ extension UIViewController : SFSafariViewControllerDelegate{
                 self.present(safariVC, animated: true, completion: nil)
                 safariVC.delegate = self
             }
+
+            }
         }
+        
     }
-}
+
