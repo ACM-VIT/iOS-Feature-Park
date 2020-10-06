@@ -7,6 +7,12 @@
 
 import UIKit
 
+class FrameworkCell: UITableViewCell {
+    
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var subtitleLabel: UILabel!
+}
+
 class FrameworkTableViewController: UITableViewController {
     
     var cellIdentifier = "frameworkCell"
@@ -19,7 +25,7 @@ class FrameworkTableViewController: UITableViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.isNavigationBarHidden = true
+        //self.navigationController?.isNavigationBarHidden = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -33,12 +39,16 @@ class FrameworkTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //let cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
-        let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: cellIdentifier)
+        //let cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: cellIdentifier)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! FrameworkCell
         let cellFramework = Datasource.frameworks[indexPath.row]
-        cell.textLabel?.text = cellFramework.name
-        cell.detailTextLabel?.text = cellFramework.description
+        cell.titleLabel.text = cellFramework.name
+        cell.subtitleLabel.text = cellFramework.description
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {

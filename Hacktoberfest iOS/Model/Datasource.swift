@@ -16,7 +16,8 @@ struct Datasource {
     static let frameworks: [FrameworkModel] = [
         .init(name: "UIKit", description: "Provides view architecture for implementing interface."),
         .init(name: "SafariServices", description: "Integrates Safari behaviors into app."),
-        .init(name: "PassKit", description: "Requests and processes Apple Pay payments."),
-        .init(name: "MapKit", description: "Embeds maps directly app windows and views.")
+        .init(name: "MapKit", description: "Embeds maps directly app windows and views."),
+        .init(name: "SceneKit", description: "Combines 3D content using high-level scene descriptions."),
+        .init(name: "SwiftUI", description: "Builds UI with a declarative Swift syntax.")
     ]
 }
