@@ -8,9 +8,14 @@
 import UIKit
 import SafariServices
 
-class TableViewController: UITableViewController {
+class ContributorCell: UITableViewCell{
+    @IBOutlet weak var nameLabel: UILabel!
     
-    var cellIdentifier = "cell"
+}
+
+class ContributorTableViewController: UITableViewController {
+    
+    var cellIdentifier = "contributorCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,14 +29,18 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: cellIdentifier)
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! ContributorCell
         let contributor = Datasource.contributors[indexPath.row]
-        cell.textLabel?.text = contributor.name
+        cell.nameLabel?.text = contributor.name
         return cell
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
     
     override func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
@@ -40,6 +49,11 @@ class TableViewController: UITableViewController {
         })
     }
     
+    //MARK: - table view delegate
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
     func makeContextMenu(for index:Int) -> UIMenu {
         var actions = [UIAction]()
@@ -56,7 +70,6 @@ class TableViewController: UITableViewController {
     }
 }
 
-
 extension UIViewController : SFSafariViewControllerDelegate{
     func openWebsite(_ link : String?){
         if let link = link,let url = URL(string: link) {
@@ -65,6 +78,9 @@ extension UIViewController : SFSafariViewControllerDelegate{
                 self.present(safariVC, animated: true, completion: nil)
                 safariVC.delegate = self
             }
+
+            }
         }
+        
     }
-}
+

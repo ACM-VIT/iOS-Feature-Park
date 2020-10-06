@@ -12,9 +12,13 @@
 		5B81A11C252A6B6300DA09A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B81A11A252A6B6300DA09A8 /* Main.storyboard */; };
 		5B81A11E252A6B6600DA09A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B81A11D252A6B6600DA09A8 /* Assets.xcassets */; };
 		5B81A121252A6B6600DA09A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B81A11F252A6B6600DA09A8 /* LaunchScreen.storyboard */; };
-		5B81A12B252A6B9400DA09A8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81A12A252A6B9400DA09A8 /* TableViewController.swift */; };
+		5B81A12B252A6B9400DA09A8 /* ContributorTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81A12A252A6B9400DA09A8 /* ContributorTableViewController.swift */; };
 		5B81A132252A6BC400DA09A8 /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81A131252A6BC400DA09A8 /* Datasource.swift */; };
 		5B81A133252A6BC400DA09A8 /* ContributorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B81A130252A6BC400DA09A8 /* ContributorModel.swift */; };
+		7022B3F4252B71150014D5A4 /* FrameworkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022B3F3252B71150014D5A4 /* FrameworkTableViewController.swift */; };
+		7022B3FD252B7A4E0014D5A4 /* FrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022B3FC252B7A4E0014D5A4 /* FrameworkModel.swift */; };
+		7022B401252B82650014D5A4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022B400252B82640014D5A4 /* DetailViewController.swift */; };
+		7067C4E7252CB8D30065B8E4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7067C4E6252CB8D30065B8E4 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +29,13 @@
 		5B81A11D252A6B6600DA09A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B81A120252A6B6600DA09A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B81A122252A6B6600DA09A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B81A12A252A6B9400DA09A8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		5B81A12A252A6B9400DA09A8 /* ContributorTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorTableViewController.swift; sourceTree = "<group>"; };
 		5B81A130252A6BC400DA09A8 /* ContributorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContributorModel.swift; sourceTree = "<group>"; };
 		5B81A131252A6BC400DA09A8 /* Datasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datasource.swift; sourceTree = "<group>"; };
+		7022B3F3252B71150014D5A4 /* FrameworkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTableViewController.swift; sourceTree = "<group>"; };
+		7022B3FC252B7A4E0014D5A4 /* FrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkModel.swift; sourceTree = "<group>"; };
+		7022B400252B82640014D5A4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7067C4E6252CB8D30065B8E4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +68,11 @@
 		5B81A113252A6B6300DA09A8 /* Hacktoberfest iOS */ = {
 			isa = PBXGroup;
 			children = (
+				5B81A135252A6BC800DA09A8 /* Model */,
 				5B81A13B252A6C6700DA09A8 /* View */,
 				5B81A138252A6C4400DA09A8 /* Controller */,
-				5B81A135252A6BC800DA09A8 /* Model */,
 				5B81A139252A6C5500DA09A8 /* Helpers */,
-				5B81A11A252A6B6300DA09A8 /* Main.storyboard */,
 				5B81A11D252A6B6600DA09A8 /* Assets.xcassets */,
-				5B81A11F252A6B6600DA09A8 /* LaunchScreen.storyboard */,
 				5B81A122252A6B6600DA09A8 /* Info.plist */,
 			);
 			path = "Hacktoberfest iOS";
@@ -75,8 +81,9 @@
 		5B81A135252A6BC800DA09A8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				5B81A130252A6BC400DA09A8 /* ContributorModel.swift */,
 				5B81A131252A6BC400DA09A8 /* Datasource.swift */,
+				7022B3FC252B7A4E0014D5A4 /* FrameworkModel.swift */,
+				5B81A130252A6BC400DA09A8 /* ContributorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -84,7 +91,10 @@
 		5B81A138252A6C4400DA09A8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5B81A12A252A6B9400DA09A8 /* TableViewController.swift */,
+				7022B3F3252B71150014D5A4 /* FrameworkTableViewController.swift */,
+				5B81A12A252A6B9400DA09A8 /* ContributorTableViewController.swift */,
+				7022B400252B82640014D5A4 /* DetailViewController.swift */,
+				7067C4E6252CB8D30065B8E4 /* AboutViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -101,6 +111,8 @@
 		5B81A13B252A6C6700DA09A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B81A11A252A6B6300DA09A8 /* Main.storyboard */,
+				5B81A11F252A6B6600DA09A8 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,10 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B81A115252A6B6300DA09A8 /* AppDelegate.swift in Sources */,
-				5B81A12B252A6B9400DA09A8 /* TableViewController.swift in Sources */,
+				5B81A12B252A6B9400DA09A8 /* ContributorTableViewController.swift in Sources */,
 				5B81A132252A6BC400DA09A8 /* Datasource.swift in Sources */,
+				7067C4E7252CB8D30065B8E4 /* AboutViewController.swift in Sources */,
+				7022B3FD252B7A4E0014D5A4 /* FrameworkModel.swift in Sources */,
 				5B81A133252A6BC400DA09A8 /* ContributorModel.swift in Sources */,
 				5B81A117252A6B6300DA09A8 /* SceneDelegate.swift in Sources */,
+				7022B3F4252B71150014D5A4 /* FrameworkTableViewController.swift in Sources */,
+				7022B401252B82650014D5A4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,13 +343,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F8CHS6PHQS;
+				DEVELOPMENT_TEAM = C35DR2MHM7;
 				INFOPLIST_FILE = "Hacktoberfest iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ak.Hacktoberfest-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "swams.Hacktoberfest-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,13 +362,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F8CHS6PHQS;
+				DEVELOPMENT_TEAM = C35DR2MHM7;
 				INFOPLIST_FILE = "Hacktoberfest iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ak.Hacktoberfest-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "swams.Hacktoberfest-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
