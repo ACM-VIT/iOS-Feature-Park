@@ -13,7 +13,7 @@
             <objects>
                 <tableViewController id="6Tt-Mn-lj5" customClass="FrameworkTableViewController" customModule="Hacktoberfest_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7Qi-ZK-A47">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="darkBlue"/>
                         <color key="sectionIndexBackgroundColor" name="darkBlue"/>
@@ -29,13 +29,13 @@
                                             <rect key="frame" x="8" y="8" width="398" height="107"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNb-Zp-kSm">
-                                                    <rect key="frame" x="8" y="8" width="48" height="24"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <rect key="frame" x="8" y="8" width="44" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JzR-Kd-f3G">
-                                                    <rect key="frame" x="8" y="40" width="382" height="17"/>
+                                                    <rect key="frame" x="8" y="37.5" width="382" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -90,7 +90,7 @@
             <objects>
                 <viewController id="7jP-38-5Wc" customClass="DetailViewController" customModule="Hacktoberfest_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tyq-3k-8uT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8a-bf-OdV">
@@ -135,18 +135,19 @@
                     <connections>
                         <segue destination="cyB-pV-Sf2" kind="relationship" relationship="viewControllers" id="MUJ-dO-Mky"/>
                         <segue destination="70C-qv-jDi" kind="relationship" relationship="viewControllers" id="ga7-uZ-gUG"/>
+                        <segue destination="XtL-6t-SL5" kind="relationship" relationship="viewControllers" id="pkV-5a-lOF"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f82-KP-DEc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-58" y="67"/>
+            <point key="canvasLocation" x="12" y="435"/>
         </scene>
         <!--Contributors-->
         <scene sceneID="Odt-am-u3B">
             <objects>
                 <tableViewController id="Xbr-9n-Ebo" customClass="ContributorTableViewController" customModule="Hacktoberfest_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Dvj-yX-kaf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" name="darkBlue"/>
                         <color key="sectionIndexBackgroundColor" name="darkBlue"/>
@@ -263,10 +264,124 @@
             </objects>
             <point key="canvasLocation" x="863.768115942029" y="434.59821428571428"/>
         </scene>
+        <!--About-->
+        <scene sceneID="EkJ-ud-Hae">
+            <objects>
+                <viewController id="XtL-6t-SL5" customClass="AboutViewController" customModule="Hacktoberfest_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ozd-5h-ZzW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Us" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rvs-oc-3tJ">
+                                <rect key="frame" x="20" y="64" width="108" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" name="brightPink"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjF-Wk-vx7">
+                                <rect key="frame" x="20" y="111" width="374" height="627"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">ACM-VIT, one of the most reputed and distinguished technical chapter in VIT, Vellore has been working with vision and determination since it’s inception in 2009, with the aspirations of advancement of computer science as a science and a profession. We are not just an organization, we are a family, united by one cause, working towards making technology more accessible much like our parent organization, ACM.
+
+ACM-VIT has been working on projects related to graphic designing, web development, machine learning and app development and has been organizing events and workshop for the same. Apart from this, ACM-VIT also boasts of its own research wing, the only chapter in VIT to have that.
+
+Technology is their cause, objective, vision and mission. Ask why? Look at our motto, “Because Technology Matters”.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Hi6-gh-hzb">
+                                <rect key="frame" x="89.5" y="758" width="235" height="35"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4O-hm-YoI">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="c4O-hm-YoI" secondAttribute="height" multiplier="1:1" id="oz3-Fj-Vh9"/>
+                                        </constraints>
+                                        <color key="tintColor" name="brightPink"/>
+                                        <state key="normal" image="github"/>
+                                        <connections>
+                                            <action selector="githubTapped:" destination="XtL-6t-SL5" eventType="touchUpInside" id="G5T-Hq-nMD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTn-99-0PM">
+                                        <rect key="frame" x="50" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="nTn-99-0PM" secondAttribute="height" multiplier="1:1" id="rot-Xe-Hlg"/>
+                                        </constraints>
+                                        <state key="normal" image="fb"/>
+                                        <connections>
+                                            <action selector="fbTapped:" destination="XtL-6t-SL5" eventType="touchUpInside" id="x00-lh-dws"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXi-pJ-3Qv">
+                                        <rect key="frame" x="100" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dXi-pJ-3Qv" secondAttribute="height" multiplier="1:1" id="r5W-wc-Mkn"/>
+                                        </constraints>
+                                        <state key="normal" image="instagram"/>
+                                        <connections>
+                                            <action selector="instagramTapped:" destination="XtL-6t-SL5" eventType="touchUpInside" id="EiP-I7-h5m"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iK-si-spK">
+                                        <rect key="frame" x="150" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7iK-si-spK" secondAttribute="height" multiplier="1:1" id="mQz-gp-pj7"/>
+                                        </constraints>
+                                        <state key="normal" image="twitter"/>
+                                        <connections>
+                                            <action selector="twitterTapped:" destination="XtL-6t-SL5" eventType="touchUpInside" id="vna-t1-bpK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ono-5N-CqD">
+                                        <rect key="frame" x="200" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ono-5N-CqD" secondAttribute="height" multiplier="1:1" id="PV8-cH-JS0"/>
+                                        </constraints>
+                                        <state key="normal" image="LinkedIn"/>
+                                        <connections>
+                                            <action selector="linkedinTapped:" destination="XtL-6t-SL5" eventType="touchUpInside" id="liE-UQ-dpL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="35" id="Y4E-Vc-iM3"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DHT-SD-mQ6"/>
+                        <color key="backgroundColor" name="darkBlue"/>
+                        <constraints>
+                            <constraint firstItem="Rvs-oc-3tJ" firstAttribute="top" secondItem="DHT-SD-mQ6" secondAttribute="top" constant="20" id="4Dj-7L-82j"/>
+                            <constraint firstItem="qjF-Wk-vx7" firstAttribute="leading" secondItem="DHT-SD-mQ6" secondAttribute="leading" constant="20" id="4PL-SA-kpm"/>
+                            <constraint firstItem="Hi6-gh-hzb" firstAttribute="top" secondItem="qjF-Wk-vx7" secondAttribute="bottom" constant="20" id="7u8-kq-hZY"/>
+                            <constraint firstItem="DHT-SD-mQ6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Hi6-gh-hzb" secondAttribute="trailing" constant="20" id="ESL-oD-qei"/>
+                            <constraint firstItem="Hi6-gh-hzb" firstAttribute="centerX" secondItem="ozd-5h-ZzW" secondAttribute="centerX" id="IBG-kf-GVN"/>
+                            <constraint firstItem="DHT-SD-mQ6" firstAttribute="bottom" secondItem="Hi6-gh-hzb" secondAttribute="bottom" constant="20" id="UBi-Rr-i5o"/>
+                            <constraint firstItem="qjF-Wk-vx7" firstAttribute="top" secondItem="Rvs-oc-3tJ" secondAttribute="bottom" constant="17" id="cC9-gA-msR"/>
+                            <constraint firstItem="DHT-SD-mQ6" firstAttribute="trailing" secondItem="qjF-Wk-vx7" secondAttribute="trailing" constant="20" id="ce6-Jq-IdE"/>
+                            <constraint firstItem="Hi6-gh-hzb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DHT-SD-mQ6" secondAttribute="leading" constant="20" id="g5V-r2-kjs"/>
+                            <constraint firstItem="Rvs-oc-3tJ" firstAttribute="leading" secondItem="DHT-SD-mQ6" secondAttribute="leading" constant="20" id="gEH-fS-fd0"/>
+                            <constraint firstItem="DHT-SD-mQ6" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rvs-oc-3tJ" secondAttribute="trailing" symbolic="YES" id="yl6-Gn-AW4"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" image="info.circle.fill" catalog="system" id="Df1-fB-5qb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4j1-cU-LPj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="868.11594202898561" y="1144.4196428571429"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="LinkedIn" width="48" height="48"/>
+        <image name="fb" width="48" height="48"/>
+        <image name="github" width="48" height="46"/>
+        <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="instagram" width="48" height="48"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="swift" catalog="system" width="128" height="106"/>
+        <image name="twitter" width="55" height="55"/>
         <namedColor name="brightPink">
             <color red="1" green="0.54100000858306885" blue="0.875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -274,7 +389,7 @@
             <color red="0.054999999701976776" green="0.18000000715255737" blue="0.29399999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="dullBlue">
-            <color red="0.13699999451637268" green="0.29800000786781311" blue="0.40799999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.16652252251578531" green="0.36491633699007664" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="maroonPink">
             <color red="0.61599999666213989" green="0.2669999897480011" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

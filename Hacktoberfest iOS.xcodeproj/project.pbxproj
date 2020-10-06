@@ -18,6 +18,7 @@
 		7022B3F4252B71150014D5A4 /* FrameworkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022B3F3252B71150014D5A4 /* FrameworkTableViewController.swift */; };
 		7022B3FD252B7A4E0014D5A4 /* FrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022B3FC252B7A4E0014D5A4 /* FrameworkModel.swift */; };
 		7022B401252B82650014D5A4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022B400252B82640014D5A4 /* DetailViewController.swift */; };
+		7067C4E7252CB8D30065B8E4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7067C4E6252CB8D30065B8E4 /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7022B3F3252B71150014D5A4 /* FrameworkTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTableViewController.swift; sourceTree = "<group>"; };
 		7022B3FC252B7A4E0014D5A4 /* FrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkModel.swift; sourceTree = "<group>"; };
 		7022B400252B82640014D5A4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		7067C4E6252CB8D30065B8E4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				7022B3F3252B71150014D5A4 /* FrameworkTableViewController.swift */,
 				5B81A12A252A6B9400DA09A8 /* ContributorTableViewController.swift */,
 				7022B400252B82640014D5A4 /* DetailViewController.swift */,
+				7067C4E6252CB8D30065B8E4 /* AboutViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				5B81A115252A6B6300DA09A8 /* AppDelegate.swift in Sources */,
 				5B81A12B252A6B9400DA09A8 /* ContributorTableViewController.swift in Sources */,
 				5B81A132252A6BC400DA09A8 /* Datasource.swift in Sources */,
+				7067C4E7252CB8D30065B8E4 /* AboutViewController.swift in Sources */,
 				7022B3FD252B7A4E0014D5A4 /* FrameworkModel.swift in Sources */,
 				5B81A133252A6BC400DA09A8 /* ContributorModel.swift in Sources */,
 				5B81A117252A6B6300DA09A8 /* SceneDelegate.swift in Sources */,

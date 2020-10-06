@@ -12,6 +12,7 @@ class ContributorCell: UITableViewCell{
     @IBOutlet weak var nameLabel: UILabel!
     
 }
+
 class ContributorTableViewController: UITableViewController {
     
     var cellIdentifier = "contributorCell"
