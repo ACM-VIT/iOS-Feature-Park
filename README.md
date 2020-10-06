@@ -3,7 +3,7 @@
 <img src="https://raw.githubusercontent.com/Malika01/hacktoberfest-readme/master/Final.png">
 </p>
 
-<h2 align="center"> PROJECT TITLE </h2>
+<h2 align="center"> iOS Feature Park </h2>
 
 <p align="center"> 
 Short description about the project.
@@ -16,6 +16,8 @@ Short description about the project.
     <!-- Uncomment the below line to add the license badge. Make sure the right license badge is reflected. -->
     <!-- <img alt="license" src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" /> -->
     <!-- forks/stars/tech stack in the form of badges from https://shields.io/ -->
+    <img alt="stars" src="https://img.shields.io/github/stars/ACM-VIT/PyFlask-2020?style=social" align="right"/> 
+    <img alt="forks" src="https://img.shields.io/github/forks/ACM-VIT/PyFlask-2020?style=social" align="right"/>   
 </p>
 
 ---
@@ -78,5 +80,7 @@ git merge
 ---
 ## Authors
 
-**Authors:** <!-- [author1's name](link to their github profile), [author2's name](link to their github profile) .. -->  
+**Authors:** 
+[Swamita](https://github.com/swamitagupta/swamitagupta), [Aaryan](https://github.com/aaryankotharii)
+<!-- [author1's name](link to their github profile), [author2's name](link to their github profile) .. -->  
 **Contributors:** <!-- Generate contributors list using this link - https://contributors-img.web.app/preview -->
