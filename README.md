@@ -17,8 +17,8 @@ An iOS playground of amazing swift frameworks!
     <!-- Uncomment the below line to add the license badge. Make sure the right license badge is reflected. -->
     <!-- <img alt="license" src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" /> -->
     <!-- forks/stars/tech stack in the form of badges from https://shields.io/ -->
-    <img alt="stars" src="https://img.shields.io/github/stars/ACM-VIT/PyFlask-2020?style=social" align="right"/> 
-    <img alt="forks" src="https://img.shields.io/github/forks/ACM-VIT/PyFlask-2020?style=social" align="right"/>   
+    <img alt="stars" src="https://img.shields.io/github/stars/ACM-VIT/iOS-Feature-Park?style=social" align="right"/> 
+    <img alt="forks" src="https://img.shields.io/github/forks/ACM-VIT/iOS-Feature-Park?style=social" align="right"/>   
 </p>
 </p>
 
