@@ -6,28 +6,37 @@
 <h2 align="center"> iOS Feature Park </h2>
 
 <p align="center"> 
-Short description about the project.
+An iOS playground of amazing swift frameworks!
 </p>
 
 <p>
   <a href="https://acmvit.in/" target="_blank">
     <img alt="made-by-acm" src="https://img.shields.io/badge/MADE%20BY-ACM%20VIT-blue?style=for-the-badge" />
   </a>
+  <img alt="license" src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" />
     <!-- Uncomment the below line to add the license badge. Make sure the right license badge is reflected. -->
     <!-- <img alt="license" src="https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge" /> -->
     <!-- forks/stars/tech stack in the form of badges from https://shields.io/ -->
     <img alt="stars" src="https://img.shields.io/github/stars/ACM-VIT/PyFlask-2020?style=social" align="right"/> 
     <img alt="forks" src="https://img.shields.io/github/forks/ACM-VIT/PyFlask-2020?style=social" align="right"/>   
 </p>
+</p>
+
+---
+
+* Want to see and implement how swift frameworks work?  
+* Want to easily embed features like maps, text recogition etc in you app? 
+
+This is for you then! Get Started with iOS Feature Park!
 
 ---
 ## Submitting a Pull Request
 
  * Fork the repository by clicking the fork button on top right corner of the page
  * Clone the target repository. To clone, click on the clone button and copy the https address. Then run 
- <pre><code>git clone [HTTPS-ADDRESS]</code></pre>
+ <pre><code>git clone https://github.com/ACM-VIT/iOS-Feature-Park</code></pre>
 * Go to the cloned directory by running 
-<pre><code>cd [NAME-OF-REPO]</code></pre>
+<pre><code>cd iOS-Feature-Park</code></pre>
 * Create a new branch. Use 
 <pre><code> git checkout -b [YOUR-BRANCH-NAME]</code></pre>
 * Make your changes to the code. Add changes to your branch by using 
@@ -58,13 +67,15 @@ Short description about the project.
 
 <!-- steps to run the app -->
   * clone your fork
-  * open the file <project_Name>.xcproject
+  * open the file Hacktoberfest iOS.xcodeproj
   * run the project ( shortcut: ⌘ R)
 ---
 
 ## Overview
 
-The overview starts here. Random text about the project, motive, how, what, why etc.
+Apple provides iOS Developers with a lot of frameworks and libraries, to make their jobs easier. This project is a collection of such frameworks, along with their implementation in your own innovative ways. 
+
+To contribute, run the project and add your own implementations to any iOS Framework. Don't forget to add your name and details under Contributors. Happy Coding!
 
 ---
 ## Usage
@@ -72,9 +83,8 @@ The overview starts here. Random text about the project, motive, how, what, why 
 
 Lets get started!
 ```console
-git remote add
-git fetch
-git merge
+git remote add origin https://github.com/ACM-VIT/iOS-Feature_Park
+git pull origin master
 ```
 
 ---
