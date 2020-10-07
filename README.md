@@ -91,6 +91,6 @@ git pull origin master
 ## Authors
 
 **Authors:** 
-[Swamita](https://github.com/swamitagupta/swamitagupta), [Aaryan](https://github.com/aaryankotharii)
+[Swamita](https://github.com/swamitagupta), [Aaryan](https://github.com/aaryankotharii)
 <!-- [author1's name](link to their github profile), [author2's name](link to their github profile) .. -->  
 **Contributors:** <!-- Generate contributors list using this link - https://contributors-img.web.app/preview -->
