@@ -7,6 +7,7 @@
 
 import UIKit
 import SafariServices
+import MessageUI
 
 class ContributorCell: UITableViewCell{
     @IBOutlet weak var nameLabel: UILabel!
@@ -60,13 +61,31 @@ class ContributorTableViewController: UITableViewController {
         let contributor = Datasource.contributors[index]
         for item in contributor.socialHandles {
             let action = UIAction(title: item.imageName, image: UIImage(named: item.imageName), identifier: nil, discoverabilityTitle: nil) { _ in
-                self.openWebsite(item.urlString)
+                if case .mail = item {
+                    self.openMailComposer(with: item.urlString)
+                } else {
+                    self.openWebsite(item.urlString)
+                }
             }
             actions.append(action)
         }
         let cancel = UIAction(title: "Cancel", attributes: .destructive) { _ in}
         actions.append(cancel)
         return UIMenu(title: "", children: actions)
+    }
+}
+
+extension ContributorTableViewController: MFMailComposeViewControllerDelegate {
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
+    
+    private func openMailComposer(with mail: String?) {
+        guard MFMailComposeViewController.canSendMail(), let mail = mail, !mail.isEmpty else { return }
+        let composeVC = MFMailComposeViewController()
+        composeVC.setToRecipients([mail])
+        composeVC.mailComposeDelegate = self
+        present(composeVC, animated: true)
     }
 }
 
@@ -78,9 +97,6 @@ extension UIViewController : SFSafariViewControllerDelegate{
                 self.present(safariVC, animated: true, completion: nil)
                 safariVC.delegate = self
             }
-
-            }
         }
-        
     }
-
+}
