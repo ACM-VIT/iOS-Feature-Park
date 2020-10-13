@@ -9,8 +9,15 @@ import Foundation
 
 struct Datasource {
     static let contributors : [ContributorModel] = [
-        .init(name: "Aaryan Kothari", social: [.github(url: "https://github.com/aaryankotharii"),.LinkedIn(url: "https://linkedin.com/in/aaryankotharii"),.mail(url: "")]),
-        .init(name: "Swamita Gupta", social: [.github(url: "https://github.com/swamitagupta"),.LinkedIn(url: "https://linkedin.com/in/swamita-gupta"),.mail(url: "")])
+        .init(name: "Aaryan Kothari", social: [.github(url: "https://github.com/aaryankotharii"),
+                                               .LinkedIn(url: "https://linkedin.com/in/aaryankotharii"),
+                                               .mail(url: "")]),
+        .init(name: "Swamita Gupta", social: [.github(url: "https://github.com/swamitagupta"),
+                                              .LinkedIn(url: "https://linkedin.com/in/swamita-gupta"),
+                                              .mail(url: "")]),
+        .init(name: "Niklas Oemler", social: [.github(url: "https://github.com/NiklasOemler"),
+                                              .twitter(url: "https://twitter.com/NiklasOemler"),
+                                              .mail(url: "")])
     ]
     
     static let frameworks: [FrameworkModel] = [
