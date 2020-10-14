@@ -18,7 +18,7 @@ class FrameworkTableViewController: UITableViewController {
     var cellIdentifier = "frameworkCell"
     var segueIdentifier = "frameworkToDetail"
     var framework = "Framework"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         //TODO initial setup
@@ -31,7 +31,7 @@ class FrameworkTableViewController: UITableViewController {
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.isNavigationBarHidden = false
     }
-
+    
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,10 +45,6 @@ class FrameworkTableViewController: UITableViewController {
         cell.titleLabel.text = cellFramework.name
         cell.subtitleLabel.text = cellFramework.description
         return cell
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
     }
     
     override func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
@@ -65,8 +61,6 @@ class FrameworkTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! DetailViewController
-            destinationVC.framework = framework
+        destinationVC.framework = framework
     }
-    
-
 }
