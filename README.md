@@ -94,3 +94,6 @@ git pull origin master
 [Swamita](https://github.com/swamitagupta), [Aaryan](https://github.com/aaryankotharii)
 <!-- [author1's name](link to their github profile), [author2's name](link to their github profile) .. -->  
 **Contributors:** <!-- Generate contributors list using this link - https://contributors-img.web.app/preview -->
+<a href="https://github.com/ACM-VIT/iOS-Feature-Park/graphs/contributors">
+  <img src="https://contributors-img.web.app/image?repo=ACM-VIT/iOS-Feature-Park" />
+</a>
