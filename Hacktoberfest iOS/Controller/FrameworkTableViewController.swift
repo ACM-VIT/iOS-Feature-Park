@@ -13,11 +13,11 @@ class FrameworkCell: UITableViewCell {
     @IBOutlet weak var subtitleLabel: UILabel!
 }
 
-class FrameworkTableViewController: UITableViewController {
+final class FrameworkTableViewController: UITableViewController {
     
     var cellIdentifier = "frameworkCell"
     var segueIdentifier = "frameworkToDetail"
-    var framework = "Framework"
+    var framework: FrameworkModel = .unknowned
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +55,7 @@ class FrameworkTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        framework = Datasource.frameworks[indexPath.row].name
+        framework = Datasource.frameworks[indexPath.row]
         performSegue(withIdentifier: segueIdentifier, sender: self)
     }
     
