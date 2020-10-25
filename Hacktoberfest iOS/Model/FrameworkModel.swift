@@ -7,16 +7,26 @@
 
 import Foundation
 
-enum FrameworkModel: String, CaseIterable {
-    case uiKit = "UIKit"
-    case safariServices = "SafariServices"
-    case mapKit = "MapKit"
-    case sceneKit = "SceneKit"
-    case swiftUI = "SwiftUI"
-    case unknowned = "Framework"
+enum FrameworkModel: CaseIterable {
+    case uiKit
+    case safariServices
+    case mapKit
+    case sceneKit
+    case swiftUI
     
     var name: String {
-        return self.rawValue
+        switch self {
+        case .uiKit:
+            return "UIKit"
+        case .safariServices:
+            return "SafariServices"
+        case .mapKit:
+            return "MapKit"
+        case .sceneKit:
+            return "SceneKit"
+        case .swiftUI:
+            return "SwiftUI"
+        }
     }
     
     var description: String {
@@ -31,8 +41,6 @@ enum FrameworkModel: String, CaseIterable {
             return "Combines 3D content using high-level scene descriptions."
         case .swiftUI:
             return "Builds UI with a declarative Swift syntax."
-        case .unknowned:
-            return "Framework not defined."
         }
     }
 }

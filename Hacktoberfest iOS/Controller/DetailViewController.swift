@@ -9,13 +9,13 @@ import UIKit
 
 final class DetailViewController: UIViewController {
     
-    var framework: FrameworkModel = .unknowned
+    var framework: FrameworkModel?
     
     @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = framework.name
+        titleLabel.text = framework?.name
         //TODO initial setup
     }
     

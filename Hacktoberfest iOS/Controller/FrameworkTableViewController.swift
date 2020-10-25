@@ -17,7 +17,7 @@ final class FrameworkTableViewController: UITableViewController {
     
     var cellIdentifier = "frameworkCell"
     var segueIdentifier = "frameworkToDetail"
-    var framework: FrameworkModel = .unknowned
+    var framework: FrameworkModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
