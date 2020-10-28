@@ -7,15 +7,15 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+final class DetailViewController: UIViewController {
     
-    var framework = ""
+    var framework: FrameworkModel?
     
     @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        titleLabel.text = framework
+        titleLabel.text = framework?.name
         //TODO initial setup
     }
     

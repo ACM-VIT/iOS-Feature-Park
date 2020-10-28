@@ -7,12 +7,40 @@
 
 import Foundation
 
-struct FrameworkModel {
-    let name: String
-    let description: String
+enum FrameworkModel: CaseIterable {
+    case uiKit
+    case safariServices
+    case mapKit
+    case sceneKit
+    case swiftUI
     
-    init(name: String, description: String){
-        self.name = name
-        self.description = description
+    var name: String {
+        switch self {
+        case .uiKit:
+            return "UIKit"
+        case .safariServices:
+            return "SafariServices"
+        case .mapKit:
+            return "MapKit"
+        case .sceneKit:
+            return "SceneKit"
+        case .swiftUI:
+            return "SwiftUI"
+        }
+    }
+    
+    var description: String {
+        switch self {
+        case .uiKit:
+            return "Provides view architecture for implementing interface."
+        case .safariServices:
+            return "Integrates Safari behaviors into app."
+        case .mapKit:
+            return "Embeds maps directly app windows and views."
+        case .sceneKit:
+            return "Combines 3D content using high-level scene descriptions."
+        case .swiftUI:
+            return "Builds UI with a declarative Swift syntax."
+        }
     }
 }
