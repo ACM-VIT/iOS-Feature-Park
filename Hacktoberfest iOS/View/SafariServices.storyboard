@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fGZ-sU-xFR">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Safari Services Controller-->
+        <scene sceneID="Kqh-Pa-2Dy">
+            <objects>
+                <viewController id="fGZ-sU-xFR" customClass="SafariServicesController" customModule="Hacktoberfest_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f7O-FW-act">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="rLe-ro-uBp">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="232"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="232" id="DXE-1q-XbI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddq-ft-g1i">
+                                <rect key="frame" x="85.5" y="281" width="243" height="40"/>
+                                <color key="backgroundColor" name="maroonPink"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="243" id="4H0-zC-czC"/>
+                                    <constraint firstAttribute="height" constant="40" id="eId-WU-ezJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <state key="normal" title="SFSafariViewController">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="openVideo:" destination="fGZ-sU-xFR" eventType="touchUpInside" id="kLo-pX-ZXx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Wfm-bA-CCh"/>
+                        <color key="backgroundColor" name="darkBlue"/>
+                        <constraints>
+                            <constraint firstItem="Ddq-ft-g1i" firstAttribute="top" secondItem="rLe-ro-uBp" secondAttribute="bottom" constant="49" id="0PX-9c-avm"/>
+                            <constraint firstItem="rLe-ro-uBp" firstAttribute="trailing" secondItem="Wfm-bA-CCh" secondAttribute="trailing" id="Drf-Cn-o7l"/>
+                            <constraint firstItem="Ddq-ft-g1i" firstAttribute="top" secondItem="rLe-ro-uBp" secondAttribute="bottom" constant="49" id="Njb-5i-q2s"/>
+                            <constraint firstItem="rLe-ro-uBp" firstAttribute="leading" secondItem="Wfm-bA-CCh" secondAttribute="leading" id="dFG-Ax-JT0"/>
+                            <constraint firstItem="rLe-ro-uBp" firstAttribute="top" secondItem="Wfm-bA-CCh" secondAttribute="top" constant="-44" id="eTp-KW-ugY"/>
+                            <constraint firstItem="Ddq-ft-g1i" firstAttribute="centerX" secondItem="f7O-FW-act" secondAttribute="centerX" id="goE-Rq-Ziy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hig-tY-QKB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52.173913043478265" y="-196.20535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="1652" height="890"/>
+        <namedColor name="darkBlue">
+            <color red="0.054999999701976776" green="0.18000000715255737" blue="0.29399999976158142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="maroonPink">
+            <color red="0.61599999666213989" green="0.2669999897480011" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

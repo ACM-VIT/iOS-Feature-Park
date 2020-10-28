@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -100,22 +101,31 @@
                                 <color key="textColor" name="brightPink"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yv-1N-woE">
+                                <rect key="frame" x="0.0" y="55" width="414" height="670"/>
+                                <color key="backgroundColor" name="darkBlue"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N4E-U6-i5f"/>
                         <color key="backgroundColor" name="darkBlue"/>
                         <constraints>
+                            <constraint firstItem="N4E-U6-i5f" firstAttribute="bottom" secondItem="4yv-1N-woE" secondAttribute="bottom" id="fgp-OE-iA2"/>
+                            <constraint firstItem="4yv-1N-woE" firstAttribute="top" secondItem="s8a-bf-OdV" secondAttribute="bottom" constant="15" id="hV1-ky-O47"/>
                             <constraint firstItem="s8a-bf-OdV" firstAttribute="top" secondItem="N4E-U6-i5f" secondAttribute="top" constant="10" id="ktQ-1E-2fP"/>
+                            <constraint firstItem="4yv-1N-woE" firstAttribute="leading" secondItem="N4E-U6-i5f" secondAttribute="leading" id="lV8-4m-Ys5"/>
                             <constraint firstItem="s8a-bf-OdV" firstAttribute="leading" secondItem="N4E-U6-i5f" secondAttribute="leading" constant="20" id="s9U-9b-iBt"/>
+                            <constraint firstItem="N4E-U6-i5f" firstAttribute="trailing" secondItem="4yv-1N-woE" secondAttribute="trailing" id="yxi-bX-10j"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2vC-MH-wrN"/>
                     <connections>
+                        <outlet property="containerView" destination="4yv-1N-woE" id="zI6-41-Wsp"/>
                         <outlet property="titleLabel" destination="s8a-bf-OdV" id="EI2-D0-y2c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcN-BW-b7J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2354" y="-231"/>
+            <point key="canvasLocation" x="2353.6231884057975" y="-231.02678571428569"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qEI-j0-qUO">
@@ -373,6 +383,20 @@ Technology is their cause, objective, vision and mission. Ask why? Look at our m
             </objects>
             <point key="canvasLocation" x="868.11594202898561" y="1144.4196428571429"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Lxl-Ki-45N">
+            <objects>
+                <viewController id="vFs-I3-uZv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2yH-ZV-IJA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sYr-bB-DfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2255" y="-647"/>
+        </scene>
     </scenes>
     <resources>
         <image name="LinkedIn" width="48" height="48"/>
@@ -395,5 +419,8 @@ Technology is their cause, objective, vision and mission. Ask why? Look at our m
         <namedColor name="maroonPink">
             <color red="0.61599999666213989" green="0.2669999897480011" blue="0.41200000047683716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

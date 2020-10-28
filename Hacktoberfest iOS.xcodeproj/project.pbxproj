@@ -19,6 +19,11 @@
 		7022B3FD252B7A4E0014D5A4 /* FrameworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022B3FC252B7A4E0014D5A4 /* FrameworkModel.swift */; };
 		7022B401252B82650014D5A4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022B400252B82640014D5A4 /* DetailViewController.swift */; };
 		7067C4E7252CB8D30065B8E4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7067C4E6252CB8D30065B8E4 /* AboutViewController.swift */; };
+		C7445C84254590F300DCFDA7 /* SafariServices.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7445C83254590F300DCFDA7 /* SafariServices.storyboard */; };
+		C7445C892545929B00DCFDA7 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7445C882545929B00DCFDA7 /* UIViewController+Extensions.swift */; };
+		C7445C8D254594D700DCFDA7 /* SafariServicesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7445C8C254594D700DCFDA7 /* SafariServicesController.swift */; };
+		C7445C912545D6D000DCFDA7 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7445C902545D6D000DCFDA7 /* UIStoryboard+Extensions.swift */; };
+		C7445C952545E04F00DCFDA7 /* UIColor+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7445C942545E04F00DCFDA7 /* UIColor+Assets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		7022B3FC252B7A4E0014D5A4 /* FrameworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkModel.swift; sourceTree = "<group>"; };
 		7022B400252B82640014D5A4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7067C4E6252CB8D30065B8E4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		C7445C83254590F300DCFDA7 /* SafariServices.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SafariServices.storyboard; sourceTree = "<group>"; };
+		C7445C882545929B00DCFDA7 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		C7445C8C254594D700DCFDA7 /* SafariServicesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariServicesController.swift; sourceTree = "<group>"; };
+		C7445C902545D6D000DCFDA7 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		C7445C942545E04F00DCFDA7 /* UIColor+Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Assets.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +78,7 @@
 		5B81A113252A6B6300DA09A8 /* Hacktoberfest iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C7445C872545929100DCFDA7 /* Extensions */,
 				5B81A135252A6BC800DA09A8 /* Model */,
 				5B81A13B252A6C6700DA09A8 /* View */,
 				5B81A138252A6C4400DA09A8 /* Controller */,
@@ -95,6 +106,7 @@
 				5B81A12A252A6B9400DA09A8 /* ContributorTableViewController.swift */,
 				7022B400252B82640014D5A4 /* DetailViewController.swift */,
 				7067C4E6252CB8D30065B8E4 /* AboutViewController.swift */,
+				C7445C8B254594AB00DCFDA7 /* SafariServices */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -112,9 +124,28 @@
 			isa = PBXGroup;
 			children = (
 				5B81A11A252A6B6300DA09A8 /* Main.storyboard */,
+				C7445C83254590F300DCFDA7 /* SafariServices.storyboard */,
 				5B81A11F252A6B6600DA09A8 /* LaunchScreen.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		C7445C872545929100DCFDA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C7445C882545929B00DCFDA7 /* UIViewController+Extensions.swift */,
+				C7445C902545D6D000DCFDA7 /* UIStoryboard+Extensions.swift */,
+				C7445C942545E04F00DCFDA7 /* UIColor+Assets.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C7445C8B254594AB00DCFDA7 /* SafariServices */ = {
+			isa = PBXGroup;
+			children = (
+				C7445C8C254594D700DCFDA7 /* SafariServicesController.swift */,
+			);
+			path = SafariServices;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +207,7 @@
 			files = (
 				5B81A121252A6B6600DA09A8 /* LaunchScreen.storyboard in Resources */,
 				5B81A11E252A6B6600DA09A8 /* Assets.xcassets in Resources */,
+				C7445C84254590F300DCFDA7 /* SafariServices.storyboard in Resources */,
 				5B81A11C252A6B6300DA09A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,9 +224,13 @@
 				5B81A132252A6BC400DA09A8 /* Datasource.swift in Sources */,
 				7067C4E7252CB8D30065B8E4 /* AboutViewController.swift in Sources */,
 				7022B3FD252B7A4E0014D5A4 /* FrameworkModel.swift in Sources */,
+				C7445C8D254594D700DCFDA7 /* SafariServicesController.swift in Sources */,
+				C7445C912545D6D000DCFDA7 /* UIStoryboard+Extensions.swift in Sources */,
 				5B81A133252A6BC400DA09A8 /* ContributorModel.swift in Sources */,
 				5B81A117252A6B6300DA09A8 /* SceneDelegate.swift in Sources */,
+				C7445C952545E04F00DCFDA7 /* UIColor+Assets.swift in Sources */,
 				7022B3F4252B71150014D5A4 /* FrameworkTableViewController.swift in Sources */,
+				C7445C892545929B00DCFDA7 /* UIViewController+Extensions.swift in Sources */,
 				7022B401252B82650014D5A4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

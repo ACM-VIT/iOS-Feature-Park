@@ -12,11 +12,29 @@ final class DetailViewController: UIViewController {
     var framework: FrameworkModel?
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var containerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = framework?.name
-        //TODO initial setup
+        
+        addFrameworkChildViewController()
+    }
+
+}
+
+private extension DetailViewController {
+    
+    func addFrameworkChildViewController() {
+        switch framework {
+        case .safariServices:
+            add(child: UIStoryboard.safariServices.instantiateInitial())
+        default:
+            break
+        }
     }
     
+    func add(child: UIViewController) {
+        add(child: child, containerView: containerView)
+    }
 }
