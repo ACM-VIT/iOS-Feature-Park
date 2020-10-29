@@ -29,6 +29,8 @@ private extension DetailViewController {
         switch framework {
         case .safariServices:
             add(child: UIStoryboard.safariServices.instantiateInitial())
+        case .mapKit:
+            add(child: MapKitViewController())
         default:
             break
         }

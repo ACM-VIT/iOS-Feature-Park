@@ -17,7 +17,10 @@ enum Datasource {
                                               .mail(url: "")]),
         .init(name: "Niklas Oemler", social: [.github(url: "https://github.com/NiklasOemler"),
                                               .twitter(url: "https://twitter.com/NiklasOemler"),
-                                              .mail(url: "")])
+                                              .mail(url: "")]),
+        .init(name: "Marian Koenig", social: [.github(url: "https://github.com/mariankoenig"),
+                                              .twitter(url: "https://twitter.com/marianko3nig"),
+                                              .mail(url: "mail@mariankoenig.com")])
     ]
     
     static let frameworks: [FrameworkModel] = FrameworkModel.allCases
